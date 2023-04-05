@@ -7,8 +7,8 @@ db.once('open', async () => {
     await User.deleteMany({});
     await Thought.deleteMany({});
 
-    const createdUsers = await User.insertMany(users);
-    const createdThoughts = await Thought.insertMany(thoughts);
+    await User.insertMany(users);
+    await Thought.insertMany(thoughts);
 
     console.log('All Users and Thoughts seeded!');
   } catch (err) {
