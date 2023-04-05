@@ -10,6 +10,7 @@ SocialScape API is a backend web application that provides a RESTful API for a s
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [API Routes](#api-routes)
 - [Contributions](#contributions)
 - [Tests](#tests)
 - [License](#license)
@@ -17,11 +18,34 @@ SocialScape API is a backend web application that provides a RESTful API for a s
 
 ## Installation
 
-Make sure you have MongoDB installed on your machine.Clone this repository and navigate to the project directory.Run npm i in the project directory to install all necessary dependencies.Set up the environment by creating a .env file in the root folder with the following content:
+Make sure you have MongoDB installed on your machine. Clone this repository and navigate to the project directory. Run `npm i` in the project directory to install all necessary dependencies.
 
 ## Usage
 
-To start the server, run node server.js in the project directory.Use a tool like Insomnia or Postman to test the API routes.node utils/seedDatabase.js
+To start the server, run `node server.js` in the project directory. Then run `node utils/seedDatabase.js`. Use a tool like Insomnia or Postman to test the API routes.
+
+## API Routes
+The API provides the following routes:
+
+
++ User Routes:
+  + Get all users
+  + Get a single user by _id
+  + Create a new user
+  + Update a user by _id
+  + Delete a user by _id
+  + Add a friend to a user's friend list
+  + Remove a friend from a user's friend list
+
+
++ Thought Routes:
+  + Get all thoughts
+  + Get a single thought by _id
+  + Create a new thought
+  + Update a thought by _id
+  + Delete a thought by _id
+  + Create a reaction for a thought
+  + Delete a reaction by reactionId
 
 ## Contributions
 
@@ -29,7 +53,10 @@ Contributions to this project are welcome. Please create a new branch for your c
 
 ## Credits
 
-Express.js Documentation
+- [Express.js Documentation](https://expressjs.com/)
+- [MongoDB Documentation](https://docs.mongodb.com/)
+- [Mongoose Documentation](https://mongoosejs.com/docs/)
+- [Insomnia REST Client](https://insomnia.rest/)
 
 ## Tests
 
